@@ -1,5 +1,12 @@
 # Quickstart
-- Create virtual environment with Python >= 3.8
+- Install Python>=3.8
+- Create virtual environment and activate it with your favorite tool.  
+  For example using venv:
+  ```bash
+  # on linux
+  python3 -m venv path/to/yourenv
+  source path/to/yourenv/bin/activate # activate the virtual env
+  ```
 - Install production libraries `pip install -r requirements.txt`
 - Export environment variables
   ```
