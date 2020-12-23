@@ -71,7 +71,10 @@ curl \
 
 # Production
 - The api application should be deployed together with a WSGI server behind a web server.
-- A common setup: NGINX <-> Gunicorn <-> API. See [link](https://flask.palletsprojects.com/en/1.1.x/deploying/wsgi-standalone/#gunicorn) for more info.
+- A common setup on virtual machine: NGINX <-> Gunicorn <-> API [link](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04). 
+  See [link](https://flask.palletsprojects.com/en/1.1.x/deploying/wsgi-standalone/#gunicorn) for more info on Flask deployment.
+- A setup on Kubernetes is to build a Docker image, 
+  run that as a k8s Service with the gunicorn command, adding k8s Ingress before that Service.
 - Note that the web server should be config to allow bigger request body if
   you want to post a big array. Default request body size for nginx should
   be around 1 MB.
