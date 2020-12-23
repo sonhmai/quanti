@@ -21,6 +21,8 @@
 ## Percentile of a list 
 ```
 POST /
+Content-Type: application/json
+
 {
   "pool": [1, 4, 3.5, 9],
   "percentile": 80
