@@ -1,0 +1,5 @@
+venv*
+*.pyc
+*.log
+.idea
+.pytest_cache
