@@ -7,7 +7,8 @@ _logger = getLogger(__file__)
 
 def get_percentile(arr, percentile):
     """
-    Get percentile of an array/list
+    Get percentile of an array/list.
+    Using the nearest rank method as defined in https://en.wikipedia.org/wiki/Percentile#Definitions
 
     :param arr: list of numbers
     :type arr: list
